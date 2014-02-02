@@ -1,3 +1,3 @@
 README
 
-This is an example readme file. Add your own description of the project here.
+This project will host algorithmic trading strategies. 
