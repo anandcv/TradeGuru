@@ -1,6 +1,7 @@
 import datetime
 import pytz
 import os
+
 macd = ta.MACD()
 signal = ta.SMA(timeperiod=9)
 def initialize(context):
