@@ -3,8 +3,7 @@ import pytz
 macd = ta.MACD()
 signal = ta.SMA(timeperiod=9)
 def initialize(context):
-    test
-
+    
 # Will be called on every trade event for the securities you specify. 
 def handle_data(context, data):
     # Implement your algorithm logic here.
