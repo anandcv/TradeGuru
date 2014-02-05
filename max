@@ -11,7 +11,7 @@ import com.espertech.esper.client.EventBean;
 import com.espertech.esper.client.UpdateListener;
 
 
-public class myservice extends MaxServiceBase {
+public class MaxServiceImpl extends MaxServiceBase {
 
 	public MaxServiceImpl(PositionService positionService, LookupService lookupService, OrderService orderService) {
 		super(positionService,lookupService, orderService);
@@ -41,6 +41,7 @@ public class myservice extends MaxServiceBase {
    @Override	
 	public void initialize()
 	{
+	  
 	  
 	}
 	
