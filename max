@@ -1,3 +1,5 @@
+import java.lang.reflect.Field;
+
 import com.algoTrader.service.LookupService;
 import com.algoTrader.service.OrderService;
 import com.algoTrader.service.PositionService;
@@ -9,7 +11,7 @@ import com.espertech.esper.client.EventBean;
 import com.espertech.esper.client.UpdateListener;
 
 
-public class MaxServiceImpl extends MaxServiceBase {
+public class myservice extends MaxServiceBase {
 
 	public MaxServiceImpl(PositionService positionService, LookupService lookupService, OrderService orderService) {
 		super(positionService,lookupService, orderService);
@@ -39,9 +41,6 @@ public class MaxServiceImpl extends MaxServiceBase {
    @Override	
 	public void initialize()
 	{
-	   data.put("AAPL", null);
-	   data.put("GOOG", null);
-	   data.put("YHOO", null);
 	  
 	}
 	
