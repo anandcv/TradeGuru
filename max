@@ -1,27 +1,3 @@
-import java.lang.reflect.Field;
-
-import com.algoTrader.service.LookupService;
-import com.algoTrader.service.OrderService;
-import com.algoTrader.service.PositionService;
-import com.espertech.esper.client.EPAdministrator;
-import com.espertech.esper.client.EPServiceProvider;
-import com.espertech.esper.client.EPServiceProviderManager;
-import com.espertech.esper.client.EPStatement;
-import com.espertech.esper.client.EventBean;
-import com.espertech.esper.client.UpdateListener;
-
-
-public class MaxServiceImpl extends MaxServiceBase {
-
-	public MaxServiceImpl(PositionService positionService, LookupService lookupService, OrderService orderService) {
-		super(positionService,lookupService, orderService);
-		logger.debug("Init MaxImpl");
-		
-		 talib_init("macd1","macd", "12", "26","9", "EU0009652759", "close" );
-		
-	}
-	
-	
    @Override
 	public void onData()
 	{
@@ -42,7 +18,7 @@ public class MaxServiceImpl extends MaxServiceBase {
 	public void initialize()
 	{
 	  
+		 talib_init("macd1","macd", "12", "26","9", "EU0009652759", "close" );
+		
 	  
 	}
-	
-}
